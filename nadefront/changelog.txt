@@ -1,0 +1,492 @@
+*---------------------------------------------------------*
+16.06.2026 - v1.2 Pro Match Parser / Automatic New Upload
+
+- 
+
+
+
+*---------------------------------------------------------*
+27.05.2026 - 01.06.2026 v1.1 Live maintenance fixes
+
+First Batch:
+- Challenge card text adjustment
+- FaPlus icon in non logged in collections page
+- Center the text and logo in "Login with Steam"
+- Fixed match challenge disclaimer not showing if no parsed matches
+- Fixed missing Faceit level icons
+- Fixed weird padding in UU
+- Fixed mismatched font in upload
+- Increased border width for upload buttons
+- Fixed misaligned desc preview
+- Fixed non cached name and namecolor on refresh for header
+- Fixed all lineups being matched
+- Added progress bar for uploading demo
+
+Second Batch:
+- Fixed upload stuck at 0% visually after upload
+- Fixed trend arrow showing in UMD for 1 alltime throws
+- Adjusted flash challenges to be more realistic
+- Fixes to upload pipeline
+- Fix to cumulative challenge counting for uneligible challenges (back and parser)
+- Fixed daily challenge not being generated because of timezone diff
+- Adjusted stats page padding
+- Fixed loading flicker on front page due to challenges being loaded
+- Fixed slow init fetch for matches by fetching in parts
+- Updated account delete
+- Fixed missing faceit check for no matches found message
+- Stats displayed based on faceit level
+- Fixed no sync after connect faceit
+- Fixed misaligned trend arrow UMD
+- Updated payment methods and added icons to U and SU
+- Fixed weird flickering of header and adjusted margins and heights
+
+TODO: 
+- Cache
+- Tacked filter
+- Faceit Ext
+*---------------------------------------------------------*
+01.04.2026 - 27.05.2026 v1.1 Big Tings Coming
+
++ Added smooth login visuals. Keeps user in mind
++ Front now connected to github and from there to aws
++ Challenges page
++ Track challenge progress
++ Matches page
++ Match details page
++ Home and matches page displays challenges
++ Level rewards demo on home page
++ Added dynamic name customization for lineups and profile like 7TV // maybe faceit extension later??
++ Added tracked lineup badge
++ Added level badge next to uploader name and profile
++ Profile header on its own component PH
++ Added challenge history page
++ Level in profile now uses XP. Get XP from uploads and parsing
++ Added special challenges requiring a lock
++ Match details show completed challenges
++ Light and dark mode all across site, from CBX
++ Improved visuals for upload popup
++ New login and not found pages and components
++ Added Challenge Streak system
++ Updated P and TOS
++ New maintenance page
+
+TODO:
+- Individual prerendered pages for SEO
+- Premade collections for each map
+- Pro player tags to what they use
+- New maintenance page  !!DONE IN SECOND BATCH FIXES
+- More accurate parsing (Where user is aiming)
+- Add more tracked lineups
+- Noti for uploads (dc)  !!DONE IN SECOND BATCH FIXES
+
+- Demo parsing
+ ⌞- Selected lineups with xyz positions
+ ⌞- Only fetched matches by bot, no random upload
+ ⏐ ⌞- Need CS2 bot acc for Premier etc. match fetch and skin trade
+ ⏐ ⌞- Need Faceit API integration for faceit matches <--------- Start with this so no bot
+ ⌞- Challenges
+ ⏐ ⌞- Work based on positions
+ ⏐ ⌞- Give XP
+ ⏐   ⌞- Premium users more XP
+ ⏐   ⌞- Premium more challenges
+ ⏐   ⌞- 
+ ⌞- Site based coins
+ ⏐ ⌞- Storefront for skins
+ ⏐ ⌞- cases?
+ ⌞-
+
+*---------------------------------------------------------*
+06.02.2026 - 20.02.2026 v1.0.1 QoL changes and fixes
+
++ Added 2x zoom option for collections page. Lets user pack images more tightly
++ Recommended desktop site on mobile
++ Changed mobile filter visuals. Also added more filters to view on desktop
++ Added transparent titles in collection that user can toggle on and off
++ Fixed description height differences
++ Added premade collection for Mirage
++ Stopped Collections page from fetching all users saved collections instantly
++ Visual improvements to N, IL and Collection
++ Complete Collection rework for mobile
+
++ Working on CS2 demo parsing
++ Still need to add Collection count to dropdown
++ Still need to group buttons and make them stick on mobile
+
+*---------------------------------------------------------*
+31.01.2026 - 06.02.2026 v1 live fixes
+
++ Added demo for collections page
++ Fixed login no refresh
++ Fixed images in saved collections not showing due to pagination. Added by-ids
++ Added private uploads behind paywall
++ Public / Private filter in UU
++ Removed likes from private uploads and useless lines from db.
++ Added sale to supporter. Some styling
++ Added option for single image upload for private
++ Single image logic for UF, IC and Collections pages. Styling aswell
++ Upload now shows limit cap for private and day/monthly for public
++ Check to roadmap
++ Sale styling to SU aswell
++ Removed private lineups from home page all lineups count
+
+*---------------------------------------------------------*
+26.01.2026 - 30.01.2026 v0.9.9 more live bugfix under maintenance
+
++ Updated logo and sizes
++ Added Cookies Banner (CB)
++ Added Analytics for CB (A)
++ Changed pagination to 36. Was fetching unnecessarily many
++ Added preloading to src2 in SD in Home page
++ Changed colors in upload form to match all around color coding
++ Aligned and repositioned description building in upload form
++ Jump button also requires mouse button first
++ Replaced PayPal with Stripe
++ Reworked payment buttons on home page
++ Reworked transactions and settings page to support stripe
++ Fixes to AP and AC logic
++ Added Upgrade page to replace SU and UP.
++ Removed Legend tier and moved its perks to Supporter tier
++ Users can now choose between Supporter Pack or features
++ SU now redirects user to Upgrade page
++ Removed UP and made it redirect to Upgrade page instead if limit reached
++ Fixed the preview image not loading after user has successfully uploaded images
++ Fixed no padding on UU pending lineups
+
+TODO:
+- Setup live stripe !!DONE
+- Update privacy and TOS !!DONE
+- Make sure all functions up to date like account delete
+- Upgrade button on navbar
+
+*---------------------------------------------------------*
+20.01.2026 - 25.01.2026 v0.9.8 live bugfix under maintenance
+
++ Image URLs are now clean, handled by the backend
++ Added caching for images
++ Moved search system to backend to search all of db instead of searching just the fetched items
++ Added search bar to UU. Also added pagination to UU and its backend
++ Shortened api links
++ Uploaded base images
++ First 12 images on nades page don't lazy load for better UX
++ Limit to search bar
++ Level progression now shows all users uploads instead of fetched ones
++ Added mobile check (MD)
++ Fixed various font and text related issues on mobile view
++ Fixed issue with mobile not being able to move or resize in collections page
++ Fixed issue with mobile not being able to move or resize demo on home page
++ Fixed issue with image change buttons not being visible on mobile
++ Navbar popup menu spacing changes
++ Footer spacing changes
++ Fixed Profile Dropdown not working
++ Fixed mobile profile pages
++ A lot of adjustments to gaps and padding on mobile
+<meta name="color-scheme" content="dark"> SETS A WHITE BG TO PAYPAL BUTTONS
+
+TODO:
+- Add instasmokes !!!DONE!!!!
+- Align collection page buttons !!!DONE!!!!
+- "Find your favoriteS" in main page !!!DONE!!!!
+
+*---------------------------------------------------------*
+30.11.2025 - 13.01.2026 v0.9.1 finishing changes part 2
+
++ Added a button for private and public upload. Private coming soon!
++ Popup closes in mobile view with a message. Add mobile support later
++ Minor fixes
++ Tested pagination with +60 lineups
++ Optimized home page element sizes on higher res
++ Added future fucking things in upgrade fuck do i know its new years
++ Added additional information button. exp in db
++ Added pages to upload popup. A lot nicer to look at
++ Changes to maintenance page
++ Moved likes and favorites from top to bottom, left info at top. Aligned them with username
++ Added username and exp to images in home page
++ Added a clear board button to collections page that clears favorites after user confirmation
++ Added filters to the top of the page, popup for mobile
++ Made footer go to bottom of screen if not enough images in nades
++ REMOVED MAP BASED COLLECTIONS FROM DB AND CHANGED ALL RELATED CODE IN BACKEND. THIS ALLOWS FOR REAL PAGINATION!
++ Profile dropdown menu closes when clicking outside the box
++ Clarifications to TOS and Privacy
++ Like button was buggin out on home page. Fixed by removing sessionstorage usage from UU and ULI and only using local
+
+*---------------------------------------------------------*
+23.10.2025 - 22.11.2025  v0.9 finishing changes
+
++ Payment options and roadmap in front page
++ Added a simple footer
++ Added ToS page
++ Added Privacy Policy page
++ Fixed GPU artifacts from nades page due to problems with bg-*/* and semi-transparent border rendering
++ Had to reorganize description and username position due to GPU artifacts
++ Email forwarding now works. (contact@nadebase.com)
++ shareCode added to profile db, for future
++ Shows saved collections under a lock if payment expires and user is set back to free
++ Added transactions page that give relevant info to user about their payments
++ Added detailed payment logs to db. Transactions page takes that info
++ Added 25 limit to favorites
++ Improved transactions logic
++ Cleaned code for cancelling payments
++* Created animation for logo (just name for now)
++ Improved footer look on mobile
++ Improved UP look on mobile, could be better still
++ REMOVED CACHE. too much cache compared to how little data is moving around
++ Added CSR with metadata fuck SSR
++ Header now loads once per reload for instead of every page change
++ Suspense added without affecting header
++* Even better logo animation
++ LIVE SETUP DONE / SERVER WORKING
++ All connections in Route 53
++ S3 Bucket for frontend and images
++ CloudFront for serving frontend
++ EB for backend
++ Changes to all upload components to handle upload and fetch from S3
++ Changes to backend to connect to S3 and frontend
++ Fixed reroute bug on refresh in CloudFront
+
+
+TODO:
+- One time year payment. Add discount like -10%, eye catching, limited time // scrapped for paypal for now
+- Private lineup upload ✔
+- Admin feedback panel on profile
+- Should maybe force 2 images to public, Choice for 1 in private ✔
+- Check ToS and PP ✔
+- Collections delete better UI ✔
+- Search in UserUploads ✔
+
+*---------------------------------------------------------*
+14.10.2025 - 22.10.2025 v0.8
+
++ Adding semi-pagination
++ Remove all position related stuff from database items, not supported anymore
++ Optimized collections Zordermap
++ Removed useless ZCounter
++ Added names to lineups, possibility of anon
++ Added ability to delete user data. has to be tested
++ Logs to backend
++ Automatically changes the tier data in the users lineups if user upgrades or downgrades
++ Better caching on nades page. Refresh fetch when server detects new lineup
+
+TESTING::::
+Newest page doesnt refresh after cache refresh nades page !!! WORKS?
+also spamming payment elements causes some weird thing in console load button fully first plz !!!FIXED
+Hearting the home page lineup doesnt work !!!FIXED
+Adding shift in uploads adds a +, also make mouse click first in desc
+
+WHEN UPGRADING, LINEUPS NAME ONLY GETS UPDATED ON WHICH FILTER YOU SWITCH TO
+make the UP ppbutton smaller !!! DONE
+could change Delete acc button to black !!! DONE
+removing like from likes page removes fill from nades page but not the number !!! FIXED
+
+*---------------------------------------------------------*
+Laptop 9.10.2025 - 12.10.2025    v0.7.1
+UI changes (no backend)
+
+Placeholder for data that doesnt get fetched
+Insanely good looking buttons if i may say so myself
+Added placeholder for collection demo
+Insane movement and resize demo for "Full control"
+Added slots from mycollection as demo on front page
+Actually good main page
+Need to add the stripes from resize in main to collections
+Better buttons in nades page
+Add similar button svg hover for collections page buttons DONE
+Beginning of SU.jsx
+
+*---------------------------------------------------------*
+5.10.2025 - 9.10.2025   v0.7
+
+ALOT OF COMPLICATED SHIT TO DO
+WORKING ON SETTING WEBSITE ONLINE
+MAYBE FIGURE OUT PAYPAL AGAIN?
+STRIPE WANTS WEBSITE ONLINE BEFORE WEBHOOKS
+CANT REALLY DO SSR.. CSR EASIER
+IMAGES UPLOADED GO TO PUBLIC, NEED TO GO OUTSIDE OF PUBLIC AND SRC COMPLETELY
+SHOULD SET UP IMAGES AND DATABASE BEFORE GOING ONLINE
+SET UP S3 AND EC2, MOVE WEBSITE THERE, HANDLE IMAGE UPLOAD, PUBLIC SITE, THEN PAYMENT
+MONGODB CAN BE EASILY UPGRADED
+LOADING EVERY COMPONENT AND PAGE AT START. dont do that
+
++ namechange to nadebase
++ Added "under maintenance" page
++ Paypal payments now working and in sync with database
++ Added images to main page and a masking effect
+
+
+*---------------------------------------------------------*
+14.9.2025 - 5.10.2025 v0.6
+
+Design:
++ Added trash icon to profile and custom pop up
++ Changed dropdown menu a bit to accomodate profile
++ Added buttons into profile for Uploads and settings and made transition smooth
++ Changed saved collections more user friendly
++ Added some hover color to navbar dropdown menu
++ Added cursor-pointer to logout button and profile page buttons
++ Animated placeholder for searchbar
++ Added "See More" button to not include everything in the nades section
++ "See more" appears after 24 lineups when searching for lineups for user experience
++ Pending images have a pending badge in profile
++ Changed visuals of mycollections page. User can now see what he could unlock
++ Changed description style
++ Made a throw button svg from scratch and LMB, RMB and MMB are switched to those icons in description
+
+Functions:
++ Ability to remove your own uploads on profile page
++ Removed static filters and moved them under filter button
++ Added Search bar for easy access to lineups and better ux
++ Added sorting button next to search bar (Newest/Most Liked)
++ Made search better by allowing map, util and title search all in one with spacing
++ Added autoCancel to user data and changed server code to accommodate it
++ Changed AC to include autoCancel
++ Added settings page
++ Added subsription cancel button to remove autorenewal
++ Added sessionStorage for uploads on profile so it doesnt load each time you switch pages
++ Profile page reads item.length and passes to settings page for smooth transition between pages
++ Added a user collection page where user can manage his saved collections
++ Added a user likes page where user can see his likes
++ Nades, User uploads and likes pages now all have session storage so moving around is seemless without loading
++ Added new fetch for likes page that instead of 2 fetches it fetches all data from liked items at once
+- Removed sharing. Remove lzstring
++ Only 12 lineups displayed on nades page, 24 when searching. "See More" to see more
++ Added admin review queue for pending lineups
+!!! + When users add lineups they go to pending so admins can see and approve or deny any pending lineups
+User can still see their lineup in profile and add it to favorites but its not public
++ User cant save a collection with a pending lineup
++ Added LMB, RMB and MMB to form when uploading
++ All previous TODO's completed
+
+
+TODO: 10/11
+- localstorage not working and sessions storage logs all search results letter by letter as you search + move demo.png to src ✔
+- Add name to uploads (option to be anon) ✔
+- Add z index and image index to save and session storage so images dont change when moving around the site ✔
+- Change description from Jump Throw to JUmp and add border around each desc like jumpthrow.pro ✔
+- Make leveling useful
+- Make Saved collections more user friendly ✔
+- Display NEW and POPULAR lineups with custom borders and design
+- !!!! IMPORTANT !!!! Add recently uploaded image to user profile so he can use it
+but not to public instantly (24h) so the image can be checked if its even a lineup ✔
+- Add roadmap of sorts ✔
+- payment system ✔
+- Intro page needs some adjustment, can do later ✔
+
+*---------------------------------------------------------*
+sick/drunk af/burnout ya know the deal 20.8.2025 - 14.9.2025
+*---------------------------------------------------------*
+3.8.2025 - about 20.8.2025 v0.5
+Design:
++ Started with home page design. Added intro and animated chat. Chat too big in mobile
++ Saved collections ask confirmation with the given title
++ If logged in, displays your name in chat (add limit to characters)
++ When adding lineups, your daily and monthly upload is displayed
++ Added hearts to display likes
++ Made custom titles fit their position above image better
+
+TODO: 3/3
+- Add custom popup for saving collections ✔
+- Additional information ✔
+- Change error alerts to custom alerts ✔
+
+Functions:
++ Additional image file check with sharp.
++ Added ability to save collections when logged in. Max 5 (Could change to like 20 if pay)
++ Added ability to remove saved collections
++ Added rate limiting and daily/monthly upload limits
++ Added like functionality that appends to the lineup file that is created on user upload
++ Added anti spam checks for likes
++ Added payment popup after all remaining uploads are used
++ Items are sorted by likes when map filter == all
++ Added ability to add custom title when uploading.
++ Added uploads page(change to profile) to see users own uploads
++ Fun level up system for uploads (maybe badges later?)
++ Added positions to filters
+
+TODO: 3/3
+- Maybe remove public link? Could try only private saving first with paywall lole ✔
+- For some reason an empty layout can be saved. fix it ✔
+
+*---------------------------------------------------------*
+24.7.2025 - 2.8.2025 v0.4
+Design:
+- Added "line up" description to first image when adding new lineups and have more than 2 images
+
+TODO: 2/2
+- Add load more button when over 10 or 12 images on screen ✔
+- Option to add left or right click lineup ✔
+
+Functions:
+- Added a function to copy your entire collection into a link and share it. Copies position and everything
+- Added basic steam login to the website
+- Connected db with steam and lineup information
+- Changed all local file related code to database
+- Can add lineups only when logged in
+- Nades page has filter based api fetch. Good for big databases
+
+TODO: 2/2
+- Add map based collections ✔
+- Ability to save collections to profile ✔
+
+*---------------------------------------------------------*
+19.7.2025 - 23.7.2025 v0.3
+Design:
+- Moved lineups to Nades page to make room for Home page
+TODO: 4/4
+- Create an eye catching Home page ✔
+- Maybe name change? Blueprint? CSBP? ✔
+- Organize names of positions when choosing map filter and add to upload page too // removed ✔
+- Make them appear when a lineup exists for that position ✔
+
+Functions:
+- Added CT and T filters
+- Added lineup submission button, allowing users to upload their own lineups
+- testdata useless. moved to data.json where submissions go from backend
+- A random 2 letter code is automatically added when lineup is uploaded
+- Image from upload goes to public/uploads with its own unique name and its connected to the uploaded lineup
+- User can crop their uploaded image to 1:1 aspect ratio matching the format used in Nades page
+- Uploaded images can be a maximum of 5MB
+- User can choose up to 2 images for one lineups
+TODO: 3/3
+- Add a limit to how many images user can upload per x amount of time ✔
+- Allow login to save collections and image positions on collections page ✔
+- Maybe include image positions in code? Code would be too long... ✔
+
+
+*---------------------------------------------------------*
+15.7.2025 - 18.7.2025 v0.2
+Design:
+- Changed collections page search bar. Now changes with screen width and has a simple look
+- Removed list style, not enough info displayed
+- Better titles. Title text now moves up if too many letters for one line
+
+Functions:
+- User can remove description text from collections page for only image viewing
+- Images now stack if they are about to go over the screen width
+- If lineup has more than one image, its displayed in the description automatically
+TODO: 3/3
+- User still has to reset images when first adding favourites to collections page (still old code) ✔
+- Add filters for CT, T side ✔
+- Add more lineups ✔
+
+
+*---------------------------------------------------------*
+28.6.2025 - 12.7.2025
+Main design of website:
+- Minimalistic and compact database style
+- Relevant information displayed
+TODO:2/2
+- Change collections page search bar ✔
+- Better title and list styling (List style needs a way to recognize a lineup) ✔
+
+Main functions of website:
+- Change filters to easily find what user is looking for
+- Add utility to favourites
+- User can switch between images if multiple exist
+- Code generated from items in favourites
+- Allows copying and searching of code for easy sharing of collections
+- User can move and resize images in collections as they wish to create the best viewing option for themselves
+  acting as a blueprint
+TODO: 4/4
+- More filters? ✔
+- User can add lineups themselves ✔
+- Connect MongoDB and remove testdata file ✔
+- Change testlist name when ready ✔
